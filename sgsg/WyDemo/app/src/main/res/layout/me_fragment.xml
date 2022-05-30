@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/teal_200"
+        android:title="@string/app_name"
+        android:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:text="me"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:id="@+id/signBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signBtn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/userAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/userCreditLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/userCertification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInfo"
+        android:text="退出登录" />
+
+    <Button
+        android:id="@+id/proveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exitBtn"
+        android:text="学生认证" />
+</RelativeLayout>
